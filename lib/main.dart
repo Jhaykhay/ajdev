@@ -1,7 +1,11 @@
-import 'package:ajobox/Views/onboarding_screen.dart';
+import 'package:ajobox/Views/Authenticaion/confirmPin.dart';
+import 'package:ajobox/Views/Authenticaion/createPin.dart';
+import 'package:ajobox/Views/Authenticaion/resetOtp.dart';
+import 'package:ajobox/Views/Authenticaion/resetPinScreen.dart';
+import 'package:ajobox/Views/Authenticaion/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'Views/Authenticaion/number_auth.dart';
+import 'Views/Authenticaion/signIn.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,10 +21,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: OnboardingScreen(),
-        initialRoute: '/',
+      initialRoute: '/',
       routes: {
         NumberAuth.routeName: (context) => NumberAuth(),
-       
+        Login.routeName: (contex) => Login(),
+        ResetPin.routeName: (contex) => ResetPin(),
+        CreatePin.routeName: (contex) => CreatePin(),
+        ConfirmPin.routeName: (contex) => ConfirmPin(),
       },
     );
   }

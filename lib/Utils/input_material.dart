@@ -21,11 +21,11 @@ class InputMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 17.0),
+      padding: const EdgeInsets.only(left: 0.0),
       child: TextFormField(
         style: TextStyle(color: Colors.black),
         controller: controller,
-        obscureText: obscuretext,
+        obscureText: false,
         decoration: InputDecoration(
           fillColor: Colors.grey.shade300,
           filled: true,

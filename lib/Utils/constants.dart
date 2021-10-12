@@ -8,14 +8,14 @@ const TextStyle ktsblackBodyText =
 const TextStyle ktsLessblackBodyText =
     TextStyle(color: Color(0xff555555), fontSize: kMediumSize);
 const TextStyle ktsGreyBodyText =
-    TextStyle(color: Colors.grey, fontSize: kLargeSize);
+    TextStyle(color: Colors.grey, fontSize: kLargeSize, fontFamily: 'Poppins');
 
 const TextStyle ktsGreenBodyText =
     TextStyle(color: Color(0xff21844E), fontSize: kLargeSize);
 const TextStyle ktsMainRedText =
     TextStyle(color: Color(0xffFF1A1A), fontSize: kSmallSize);
-const TextStyle ktsButtonText =
-    TextStyle(color: Color(0xffFBFDFF), fontSize: kLargeSize);
+const TextStyle ktsButtonText = TextStyle(
+    color: Color(0xffFBFDFF), fontSize: kLargeSize, fontFamily: 'Poppins');
 //font sizing
 const double kSmallSize = 12;
 const double kMediumSize = 14;
